@@ -1,128 +1,147 @@
 {
-    "title": "Thomas A. Anderson (Neo) | Portafolio",
-    "description": "Soy Neo, posiblemente el mejor programador de la historia.",
-    "image": "/avatar.jpg",
-    "avatar": "/avatar.jpg",
-    "name": "Thomas A. Anderson (Neo)",
-    "skill": "Programador, hacker y el Elegido",
-    "location": "Matrix y el mundo real",
+    "title": "Farid Ardila - Portafolio",
+    "description": "Bienvenido a mi portafolio",
+    "image": "/foto.jpeg",
+    "avatar": "/foto.jpeg",
+    "name": "Farid Ardila",
+    "skill": "",
+    "location": "Colombia",
     "media": {
-        "email": "neo@metacortex.com",
+        "email": "deardilah@unal.edu.co",
         "cv": "/data/cv.pdf",
-        "github": "https://github.com/thomasanderson",
-        "likedin": "https://linkedin.com/in/thomasanderson"
+        "github": "https://github.com/faridardila",
+        "likedin": "https://www.linkedin.com/in/faridardila/"
     },
-    "about": "Soy un programador inquieto con una doble vida, ya que trabajo en una prestigiosa empresa de software pero también he cometido todos los crímenes informáticos que existen. Tengo la sensación de que nada es lo que parece ser.",
+    "about": "Hola, mi nombre es Farid Ardila, estudiante de Ingeniería de Sistemas de la Universidad Nacional de Colombia. Tengo experiencia en el desarrollo de Software, con enfoque en creación de aplicaciones móviles. Asimismo, tuve la oportunidad de participar en competiciones internacionales en el área de automatización de soluciones empresariales. Me gusta la creación de contenido audiovisual y el aprendizaje de idiomas.",
     "technologies": [
         {
-            "icon": "devicon-devicon-plain",
-            "name": "Binario"
-        },
-        {
-            "icon": "devicon-devicon-plain",
-            "name": "Ensamblador"
-        },
-        {
-            "icon": "devicon-devicon-plain",
-            "name": "COBOL"
+            "icon": "devicon-java-plain",
+            "name": "Java"
         },
         {
             "icon": "devicon-c-plain",
             "name": "C"
         },
         {
+            "icon": "devicon-azuresqldatabase-plain",
+            "name": "SQL"
+        },
+        {
+            "icon": "devicon-github-original",
+            "name": "GitHub"
+        },
+        {
             "icon": "devicon-python-plain",
             "name": "Python"
+        },
+        {
+            "icon": "devicon-androidstudio-plain",
+            "name": "Android Studio"
         }
     ],
     "experience": [
         {
             "icon": "terminal",
-            "title": "Metacortex",
-            "subtitle": "Programador",
-            "description": "Programo software respetable desde un cubículo.",
-            "date": "1999"
+            "title": "English",
+            "subtitle": "C1 - Advanced",
+            "description": "",
+            "date": ""
         },
         {
-            "icon": "rabbit",
-            "title": "Nebuchadnezzar",
-            "subtitle": "El Elegido",
-            "description": "Me encargo de salvar el mundo.",
-            "date": "1999 - Actualidad"
+            "icon": "terminal",
+            "title": "Français",
+            "subtitle": "B2 - Intermédiaire",
+            "description": "",
+            "date": ""
         }
     ],
     "projects": [
         {
-            "icon": "bar-chart-4",
-            "title": "Software random",
-            "subtitle": "Software propiedad de Metacortex",
-            "description": "Herramienta para hacer rico a otras personas.",
+            "icon": "Store",
+            "title": "Pos-Ya!",
+            "subtitle": "Sistema POS para pequeños comercios",
+            "description": "Solución integral de Punto de Venta, diseñada estratégicamente para ser la columna vertebral digital de los pequeños comercios en Colombia.",
             "technologies": [
                 {
-                    "icon": "devicon-python-plain",
-                    "name": "Python"
+                    "icon": "devicon-javascript-plain",
+                    "name": "Javascript"
                 },
                 {
-                    "icon": "devicon-django-plain",
-                    "name": "Django"
+                    "icon": "devicon-electron-original",
+                    "name": "Electron"
                 }
             ],
-            "image": "/project_1.jpg",
-            "url": "https://matrix.fandom.com/wiki/MetaCortex",
-            "github": "https://github.com/thomasanderson"
+            "image": "/posya.png",
+            "url": "",
+            "github": "https://github.com/YonyChaparro/JavaLi"
         },
         {
-            "icon": "bug-off",
-            "title": "Hackeo Matrix",
-            "subtitle": "Mi obra maestra",
-            "description": "Migración del Matrix al mundo real y hackeo del sistema ficticio para salvar a la humanidad.",
+            "icon": "Store",
+            "title": "Vendeton",
+            "subtitle": "Gestión de ventas mayoristas",
+            "description": "Aplicación enfocada en optimizar la gestión de ventas mayoristas de San Victorino, con énfasis en el desarrollo de bases de datos relacionales",
             "technologies": [
                 {
-                    "icon": "devicon-devicon-plain",
-                    "name": "Binario"
+                    "icon": "devicon-java-plain",
+                    "name": "Java"
+                },
+                {
+                    "icon": "devicon-azuresqldatabase-plain",
+                    "name": "SQL"
+                },  
+                {
+                    "icon": "devicon-androidstudio-plain",
+                    "name": "Android Studio"
                 }
             ],
-            "image": "/project_2.jpg",
-            "url": "https://matrix.fandom.com/wiki/Wiki",
-            "github": "https://github.com/thomasanderson"
+            "image": "/vendeton.png",
+            "url": "",
+            "github": "https://github.com/cristoferOrdonez/VendeTon-Gestor-Ventas-Mayoristas"
+        },
+        {
+            "icon": "Store",
+            "title": "Bocu (Bogotá Cultural)",
+            "subtitle": "Oferta cultural de la ciudad",
+            "description": "Aplicación que impulsa conectar a usuarios con eventos artísticos locales en la capital.",
+            "technologies": [
+                {
+                    "icon": "devicon-java-plain",
+                    "name": "Java"
+                },
+                {
+                    "icon": "devicon-androidstudio-plain",
+                    "name": "Android Studio"
+                }
+            ],
+            "image": "/bocu.png",
+            "url": "",
+            "github": "https://github.com/cristoferOrdonez/Bocu-Bogota-Cultural"
         }
     ],
     "training": [
         {
             "icon": "backpack",
-            "title": "Central West Junior High",
-            "subtitle": "Una escuela",
-            "description": "Aprendí cosas.",
-            "date": "Indeterminado",
-            "certificate": "https://en.wikipedia.org/wiki/Neo_(The_Matrix)"
+            "title": "Universidad Sergio Arboleda",
+            "subtitle": "Ciencias de la Computación e Inteligencia Artificial",
+            "description": "Inmersión académica durante un semestre",
+            "date": "2022",
+            "certificate": ""
         },
         {
-            "icon": "graduation-cap",
-            "title": "Owen Patterson High",
-            "subtitle": "Otra escuela",
-            "description": "Aprendí más cosas.",
-            "date": "Indeterminado",
-            "certificate": "https://en.wikipedia.org/wiki/Neo_(The_Matrix)"
+            "icon": "backpack",
+            "title": "Universidad Nacional de Colombia - Sede Bogotá",
+            "subtitle": "Ingeniería de Sistemas y Computación",
+            "description": "Pregrado",
+            "date": "2023 - Actualidad",
+            "certificate": ""
         }
     ],
     "extras": [
         {
-            "image": "/extra_1.jpg",
-            "title": "The Matrix",
-            "description": "Aparecí en esta película.",
-            "url": "https://en.wikipedia.org/wiki/The_Matrix"
-        },
-        {
-            "image": "/extra_2.jpg",
-            "title": "The Matrix Reloaded",
-            "description": "Y en esta otra.",
-            "url": "https://en.wikipedia.org/wiki/The_Matrix_Reloaded"
-        },
-        {
-            "image": "/extra_3.jpg",
-            "title": "The Matrix Revolutions",
-            "description": "Y en esta más.",
-            "url": "https://en.wikipedia.org/wiki/The_Matrix_Revolutions"
+            "image": "",
+            "title": "",
+            "description": "",
+            "url": ""
         }
     ]
 }
