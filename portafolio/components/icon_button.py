@@ -6,6 +6,7 @@ def icon_button(icon: str, url: str, text="", solid=False) -> rx.Component:
         rx.button(
             rx.icon(icon),
             text,
+            class_name="btn-creative",
             variant="solid" if solid else "surface"
         ),
         href=url,

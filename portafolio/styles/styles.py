@@ -20,7 +20,8 @@ class Size(Enum):
 
 
 STYLESHEETS = [
-    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css",
+    "/style.css"
 ]
 
 BASE_STYLE = {

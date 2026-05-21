@@ -15,28 +15,60 @@
     "about": "Hola, mi nombre es Farid Ardila, estudiante de Ingeniería de Sistemas de la Universidad Nacional de Colombia. Tengo experiencia en el desarrollo de Software, con enfoque en creación de aplicaciones móviles. Asimismo, tuve la oportunidad de participar en competiciones internacionales en el área de automatización de soluciones empresariales. Me gusta la creación de contenido audiovisual y el aprendizaje de idiomas.",
     "technologies": [
         {
-            "icon": "devicon-java-plain",
-            "name": "Java"
+            "icon": "devicon-react-original",
+            "name": "React"
         },
         {
-            "icon": "devicon-c-plain",
-            "name": "C"
+            "icon": "devicon-javascript-plain",
+            "name": "JavaScript"
         },
         {
-            "icon": "devicon-azuresqldatabase-plain",
-            "name": "SQL"
+            "icon": "devicon-html5-plain",
+            "name": "HTML5"
         },
         {
-            "icon": "devicon-github-original",
-            "name": "GitHub"
+            "icon": "devicon-css3-plain",
+            "name": "CSS3"
+        },
+        {
+            "icon": "devicon-tailwindcss-plain",
+            "name": "Tailwind CSS"
+        },
+        {
+            "icon": "devicon-nodejs-plain",
+            "name": "Node.js"
+        },
+        {
+            "icon": "devicon-express-original",
+            "name": "Express"
+        },
+        {
+            "icon": "devicon-electron-original",
+            "name": "Electron"
         },
         {
             "icon": "devicon-python-plain",
             "name": "Python"
         },
         {
+            "icon": "devicon-java-plain",
+            "name": "Java"
+        },
+        {
             "icon": "devicon-androidstudio-plain",
-            "name": "Android Studio"
+            "name": "Android"
+        },
+        {
+            "icon": "devicon-azuresqldatabase-plain",
+            "name": "SQL"
+        },
+        {
+            "icon": "devicon-sqlite-plain",
+            "name": "SQLite"
+        },
+        {
+            "icon": "devicon-git-plain",
+            "name": "Git"
         }
     ],
     "experience": [
@@ -53,22 +85,87 @@
             "subtitle": "B2 - Intermédiaire",
             "description": "",
             "date": ""
+        },
+        {
+            "icon": "terminal",
+            "title": "Italiano",
+            "subtitle": "A2 - Elementare",
+            "description": "",
+            "date": ""
         }
     ],
     "projects": [
         {
-            "icon": "Store",
-            "title": "Pos-Ya!",
-            "subtitle": "Sistema POS para pequeños comercios",
-            "description": "Solución integral de Punto de Venta, diseñada estratégicamente para ser la columna vertebral digital de los pequeños comercios en Colombia.",
+            "icon": "Globe",
+            "title": "Aquanova",
+            "subtitle": "Plataforma de innovación en agua y saneamiento",
+            "description": "Front-end web construido como SPA para el proyecto Aquanova, enfocado en navegación fluida, componentes reutilizables y visualizaciones para el usuario final. Incluye integración de librerías para animación e interacción avanzada, así como utilidades para manejo de datos y/o capas geográficas según la necesidad del producto.",
             "technologies": [
                 {
-                    "icon": "devicon-javascript-plain",
-                    "name": "Javascript"
+                    "icon": "devicon-react-original",
+                    "name": "React"
                 },
+                {
+                    "icon": "devicon-vite-plain",
+                    "name": "Vite"
+                },
+                {
+                    "icon": "devicon-tailwindcss-plain",
+                    "name": "Tailwind CSS"
+                },
+                {
+                    "icon": "devicon-javascript-plain",
+                    "name": "JavaScript"
+                },
+                {
+                    "icon": "devicon-html5-plain",
+                    "name": "HTML5"
+                },
+                {
+                    "icon": "devicon-css3-plain",
+                    "name": "CSS3"
+                }
+            ],
+            "image": [
+                "/aquanova_screenshot.png",
+                "/aquanova_metrics.png"
+            ],
+            "url": "",
+            "github": "https://github.com/cristoferOrdonez/Aquanova-FrontEnd"
+        },
+        {
+            "icon": "Store",
+            "title": "Pos-Ya! (JavaLí)",
+            "subtitle": "Punto de Venta (POS) para pequeños comercios en Colombia",
+            "description": "Proyecto desarrollado en el contexto de Ingeniería de Software I (2025-1), orientado a construir un Punto de Venta (POS) para pequeños comercios en Colombia. El sistema contempla flujo de ventas, gestión de inventario y clientes, generación de reportes y soporte para procesos de facturación, con enfoque en una experiencia administrativa clara desde escritorio.",
+            "technologies": [
                 {
                     "icon": "devicon-electron-original",
                     "name": "Electron"
+                },
+                {
+                    "icon": "devicon-react-original",
+                    "name": "React"
+                },
+                {
+                    "icon": "devicon-vite-plain",
+                    "name": "Vite"
+                },
+                {
+                    "icon": "devicon-tailwindcss-plain",
+                    "name": "Tailwind CSS"
+                },
+                {
+                    "icon": "devicon-nodejs-plain",
+                    "name": "Node.js"
+                },
+                {
+                    "icon": "devicon-express-original",
+                    "name": "Express"
+                },
+                {
+                    "icon": "devicon-sqlite-plain",
+                    "name": "SQLite"
                 }
             ],
             "image": "/posya.png",
@@ -76,57 +173,26 @@
             "github": "https://github.com/YonyChaparro/JavaLi"
         },
         {
-            "icon": "Store",
-            "title": "Vendeton",
-            "subtitle": "Gestión de ventas mayoristas",
-            "description": "Aplicación enfocada en optimizar la gestión de ventas mayoristas de San Victorino, con énfasis en el desarrollo de bases de datos relacionales",
+            "icon": "Smartphone",
+            "title": "VendeTon",
+            "subtitle": "Gestión de ventas mayoristas nativa para Android",
+            "description": "Aplicación Android nativa enfocada en la gestión de ventas mayoristas, pensada para escenarios de inventario dinámico, múltiples clientes y operación ágil en negocio. Se estructura como proyecto Android estándar para facilitar mantenimiento y scalabilidad.",
             "technologies": [
                 {
                     "icon": "devicon-java-plain",
                     "name": "Java"
                 },
                 {
-                    "icon": "devicon-azuresqldatabase-plain",
-                    "name": "SQL"
-                },  
-                {
                     "icon": "devicon-androidstudio-plain",
-                    "name": "Android Studio"
+                    "name": "Android SDK"
                 }
             ],
             "image": "/vendeton.png",
             "url": "",
             "github": "https://github.com/cristoferOrdonez/VendeTon-Gestor-Ventas-Mayoristas"
-        },
-        {
-            "icon": "Store",
-            "title": "Bocu (Bogotá Cultural)",
-            "subtitle": "Oferta cultural de la ciudad",
-            "description": "Aplicación que impulsa conectar a usuarios con eventos artísticos locales en la capital.",
-            "technologies": [
-                {
-                    "icon": "devicon-java-plain",
-                    "name": "Java"
-                },
-                {
-                    "icon": "devicon-androidstudio-plain",
-                    "name": "Android Studio"
-                }
-            ],
-            "image": "/bocu.png",
-            "url": "",
-            "github": "https://github.com/cristoferOrdonez/Bocu-Bogota-Cultural"
         }
     ],
     "training": [
-        {
-            "icon": "backpack",
-            "title": "Universidad Sergio Arboleda",
-            "subtitle": "Ciencias de la Computación e Inteligencia Artificial",
-            "description": "Inmersión académica durante un semestre",
-            "date": "2022",
-            "certificate": ""
-        },
         {
             "icon": "backpack",
             "title": "Universidad Nacional de Colombia - Sede Bogotá",
@@ -134,6 +200,24 @@
             "description": "Pregrado",
             "date": "2023 - Actualidad",
             "certificate": ""
+        }
+    ],
+    "achievements": [
+        {
+            "icon": "briefcase",
+            "title": "Desarrollador FrontEnd e Innovador Tecnológico",
+            "subtitle": "Proyecto de Innovación en Agua y Saneamiento (BID, EAAB, Cewas)",
+            "description": "• Desarrollé una aplicación web innovadora para mejorar el acceso al agua y saneamiento en comunidades vulnerables, transformando desafíos locales en soluciones tecnológicas escalables con impacto en el mundo real.\n• Diseñé e implementé una arquitectura frontend responsiva usando JavaScript, React, Tailwind CSS y HTML/CSS, traduciendo diseños de Figma en una interfaz de usuario intuitiva.",
+            "date": "2025 - Presente",
+            "image": "/cewas.jpg"
+        },
+        {
+            "icon": "award",
+            "title": "Integrador de Software y Desarrollador Low-Code",
+            "subtitle": "Campeonatos Internacionales 1C Enterprise (San Petersburgo y Moscú, Rusia)",
+            "description": "• Seleccionado a través de un riguroso entrenamiento técnico para representar a Colombia en el Professionals Championship (2024) y en competencias internacionales de automatización (2025), enfocadas en la automatización de procesos de negocio.\n• Diseñé e integré una API RESTful entre una solución empresarial 1C y un repositorio gestionado en GitLab, manejando autenticación segura por tokens y procesando payloads JSON para sincronizar datos de manera fluida.",
+            "date": "2024 - 2025",
+            "image": ["/1c.jpg", "/1c_2.jpg"]
         }
     ],
     "extras": [

@@ -25,6 +25,12 @@ class Info:
         self.certificate = certificate
         self.technologies = [Technology(**tech) for tech in technologies]
         self.image = image
+        if isinstance(image, list):
+            self.images = image
+        elif image != "":
+            self.images = [image]
+        else:
+            self.images = []
         self.url = url
         self.github = github
 
@@ -53,7 +59,8 @@ class Data:
             experience,
             projects,
             training,
-            extras
+            achievements=[],
+            extras=[]
     ):
         self.title = title
         self.description = description
@@ -68,10 +75,11 @@ class Data:
         self.experience = [Info(**info) for info in experience]
         self.projects = [Info(**info) for info in projects]
         self.training = [Info(**info) for info in training]
+        self.achievements = [Info(**info) for info in achievements]
         self.extras = [Extra(**info) for info in extras]
 
 
-with open("assets/data/data.json") as file:
+with open("assets/data/data.json", encoding="utf-8") as file:
     json_data = json.load(file)
 
 data = Data(**json_data)

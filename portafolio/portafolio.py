@@ -12,25 +12,38 @@ DATA = data.data
 
 
 def index() -> rx.Component:
-    return rx.center(
-        #rx.theme_panel(),
-        rx.vstack(
-            header(DATA),
-            about(DATA.about),
-            rx.divider(),
-            tech_stack(DATA.technologies),
-            info("Proyectos", DATA.projects),
-            info("Formación", DATA.training),
-            info("Idiomas", DATA.experience),
-            #extra(DATA.extras),
-            rx.divider(),
-            footer(DATA.media),
-            spacing=Size.MEDIUM.value,
-            padding_x=EmSize.MEDIUM.value,
-            padding_y=EmSize.BIG.value,
-            max_width=MAX_WIDTH,
+    return rx.box(
+        # Background animated glowing blobs
+        rx.box(class_name="bg-blob blob-1"),
+        rx.box(class_name="bg-blob blob-2"),
+        rx.box(class_name="bg-blob blob-3"),
+        
+        # Main center container
+        rx.center(
+            rx.vstack(
+                header(DATA),
+                about(DATA.about),
+                rx.divider(opacity="0.15"),
+                tech_stack(DATA.technologies),
+                info("Proyectos", DATA.projects),
+                info("Logros", DATA.achievements),
+                info("Formación", DATA.training),
+                info("Idiomas", DATA.experience),
+                #extra(DATA.extras),
+                rx.divider(opacity="0.15"),
+                footer(DATA.media),
+                class_name="glass-wrapper",
+                spacing=Size.MEDIUM.value,
+                max_width=MAX_WIDTH,
+                width="100%"
+            ),
+            padding_x=["0.5em", "1em", "2em"],
+            padding_y=["2em", "3em", "4em"],
             width="100%"
-        )
+        ),
+        width="100%",
+        min_height="100vh",
+        position="relative"
     )
 
 

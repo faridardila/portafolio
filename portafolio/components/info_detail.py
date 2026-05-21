@@ -10,12 +10,17 @@ def info_detail(info: Info) -> rx.Component:
         rx.hstack(
             icon_badge(info.icon),
             rx.vstack(
-                rx.text.strong(info.title),
-                rx.text(info.subtitle),
-                rx.text(
-                    info.description,
-                    size=Size.SMALL.value,
-                    color_scheme="gray"
+                rx.text.strong(info.title, font_size="1.2em", color="#ffffff"),
+                rx.text(info.subtitle, font_size="0.95em", color="#a855f7", font_weight="500"),
+                rx.cond(
+                    info.description != "",
+                    rx.text(
+                        info.description,
+                        font_size="0.9em",
+                        color="var(--gray-11)",
+                        line_height="1.5",
+                        white_space="pre-line"
+                    )
                 ),
                 rx.cond(
                     len(info.technologies) > 0,
@@ -24,12 +29,14 @@ def info_detail(info: Info) -> rx.Component:
                             rx.badge(
                                 rx.box(class_name=technology.icon),
                                 technology.name,
-                                color_scheme="gray"
+                                class_name="tech-badge",
+                                variant="soft"
                             )
                             for technology in info.technologies
                         ],
                         wrap="wrap",
-                        spacing=Size.SMALL.value
+                        spacing=Size.SMALL.value,
+                        padding_top="0.3em"
                     )
                 ),
                 rx.hstack(
@@ -46,7 +53,9 @@ def info_detail(info: Info) -> rx.Component:
                             "github",
                             info.github
                         )
-                    )
+                    ),
+                    spacing=Size.SMALL.value,
+                    padding_top="0.3em"
                 ),
                 spacing=Size.SMALL.value,
                 width="100%"
@@ -54,20 +63,10 @@ def info_detail(info: Info) -> rx.Component:
             spacing=Size.DEFAULT.value,
             width="100%"
         ),
-        rx.cond(
-            info.image != "",
-            rx.image(
-                src=info.image,
-                height=IMAGE_HEIGHT,
-                width="auto",
-                border_radius=EmSize.DEFAULT.value,
-                object_fit="cover"
-            )
-        ),
         rx.vstack(
             rx.cond(
                 info.date != "",
-                rx.badge(info.date)
+                rx.badge(info.date, color_scheme="purple", variant="surface")
             ),
             rx.cond(
                 info.certificate != "",
@@ -77,10 +76,30 @@ def info_detail(info: Info) -> rx.Component:
                     solid=True
                 )
             ),
+            *[
+                rx.box(
+                    rx.image(
+                        src=img,
+                        height="auto",
+                        width="100%",
+                        border_radius=EmSize.DEFAULT.value,
+                        object_fit="cover",
+                        box_shadow="0 8px 16px rgba(0,0,0,0.3)"
+                    ),
+                    width=["100%", "280px"],
+                    flex_shrink="0",
+                    padding_top="0.4em"
+                )
+                for img in info.images
+            ],
             spacing=Size.SMALL.value,
-            align="end"
+            align="end",
+            flex_shrink="0",
+            width=["100%", "auto"]
         ),
         flex_direction=["column-reverse", "row"],
         spacing=Size.DEFAULT.value,
-        width="100%"
+        class_name="glass-card",
+        width="100%",
+        align_items="start"
     )
